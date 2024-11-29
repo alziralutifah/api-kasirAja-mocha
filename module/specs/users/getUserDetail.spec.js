@@ -8,7 +8,7 @@ describe("Read / Get User Detail Kasir Aja", () => {
 
     it("GET - Succesfully get user detail", async () => {
         accessToken = await getAccessToken();
-        userId = "d6706346-1ca8-4943-a074-ec584856005a";
+        userId = "6f986e29-9994-43ec-8598-59d988074d9c";
         const response = await getUserDetail(accessToken, userId);
 
         expect((await response).status).to.equal(200);
