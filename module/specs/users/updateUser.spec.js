@@ -9,7 +9,7 @@ describe("Update User Kasir Aja", () => {
 
     it("PUT - Update User Successful", async () => {
         accessToken = await getAccessToken();
-        userId = "23f4d6bd-1937-4f28-891e-94c941b8d275";
+        userId = "d6706346-1ca8-4943-a074-ec584856005a";
         const response = await updateUser(accessToken, userId);
 
         expect((await response).status).to.equal(200);
@@ -19,6 +19,6 @@ describe("Update User Kasir Aja", () => {
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
         console.log("Message: ", response.body.message);
-        console.log("Raw Response body:", response.body);
+        console.log("Raw Response body:", JSON.stringify(response.body, null, 2)); 
     })
 })

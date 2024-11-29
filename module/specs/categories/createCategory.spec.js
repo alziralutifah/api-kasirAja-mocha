@@ -1,13 +1,13 @@
 import { expect } from "chai";
 import { getAccessToken } from "../../helpers/getAccessToken.js";
-import { creaetCategory } from "../../function/categories/createCategory.js";
+import { createCategory } from "../../function/categories/createCategory.js";
 
 describe("Create Categories Kasir Aja", () => {
     let accessToken;
 
     it("POST - Create categories successful", async () => {
         accessToken = await getAccessToken();
-        const response = await creaetCategory(accessToken);
+        const response = await createCategory(accessToken);
 
         expect((await response).status).to.equal(201);
         expect((await response).body.status).to.equal("success");
@@ -16,6 +16,6 @@ describe("Create Categories Kasir Aja", () => {
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
         console.log("Message: ", response.body.message);
-        console.log("Raw Response body:", response.body);
+        console.log("Raw Response body:", JSON.stringify(response.body, null, 2));
     })
 })

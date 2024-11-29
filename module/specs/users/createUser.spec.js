@@ -16,6 +16,6 @@ describe("Create User Kasir Aja", () => {
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
         console.log("Message: ", response.body.message);
-        console.log("Raw Response body:", response.body);
+        console.log("Raw Response Body:", JSON.stringify(response.body, null, 2));
     })
 })

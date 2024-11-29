@@ -8,7 +8,7 @@ describe("Delete Categories Kasir Aja", () => {
 
     it("DELETE - Delete categories successful", async () => {
         accessToken = await getAccessToken();
-        categoryId = "1c52a402-1839-42ba-b447-aa6f943b0189";
+        categoryId = "df819489-b888-4e63-b566-a16c43516d95";
         const response = await deleteCategory(accessToken, categoryId);
 
         // Assertion

@@ -8,7 +8,7 @@ describe("Delete User Kasir Aja", () => {
 
     it("DELETE - Delete user successful", async () => {
         accessToken = await getAccessToken();
-        userId = "267b5c57-4cc6-4d55-a4a9-7d807dcaeedc";
+        userId = "d6706346-1ca8-4943-a074-ec584856005a";
         const response = await deleteUser(accessToken, userId);
 
         // Assertion
@@ -19,5 +19,6 @@ describe("Delete User Kasir Aja", () => {
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
         console.log("Message: ", response.body.message);
+        console.log("Raw Response body:", JSON.stringify(response.body, null, 2));
     })
 })

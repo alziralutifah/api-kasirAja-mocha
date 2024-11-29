@@ -8,7 +8,7 @@ describe("Read / Get Categories Detail Kasir Aja", () => {
 
     it("GET - Succesfully get categories detail", async () => {
         accessToken = await getAccessToken();
-        categoryId = "5d13ded1-fce1-4aad-a72f-491fb4d9ea2b";
+        categoryId = "df819489-b888-4e63-b566-a16c43516d95";
         const response = await getCategoryDetail(accessToken, categoryId);
 
         expect((await response).status).to.equal(200);
@@ -17,6 +17,6 @@ describe("Read / Get Categories Detail Kasir Aja", () => {
         
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
-        console.log("Raw Response body:", response.body);
+        console.log("Raw Response body:", JSON.stringify(response.body, null, 2));
     })  
 })

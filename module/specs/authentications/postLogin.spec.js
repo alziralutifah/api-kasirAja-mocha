@@ -9,6 +9,6 @@ describe("Authentications", () => {
         expect((await response).body.message).to.equal('Authentication berhasil ditambahkan');
 
         console.log("Status Code: ", response.status); 
-        console.log("Response body: ", response.body)
+        console.log("Raw Response Body:", JSON.stringify(response.body, null, 2));
     })
 })

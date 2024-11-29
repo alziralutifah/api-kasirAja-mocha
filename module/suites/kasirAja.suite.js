@@ -5,11 +5,11 @@ import { getUserDetail } from "../function/users/getUserDetail.js";
 import { createUser } from "../function/users/createUser.js";
 import { updateUser } from "../function/users/updateUser.js";
 import { deleteUser } from "../function/users/deleteUser.js";
-import { creaetCategory } from "../function/categories/createCategory.js";
 import { getCategoryList } from "../function/categories/getCategoryList.js";
 import { getCategoryDetail } from "../function/categories/getCategoryDetail.js";
 import { updateCategory } from "../function/categories/updateCategory.js";
 import { deleteCategory } from "../function/categories/deleteCategory.js";
+import { createCategory } from "../function/categories/createCategory.js";
 
 
 describe("End to End Kasir Aja Test", () => {
@@ -93,7 +93,7 @@ describe("End to End Kasir Aja Test", () => {
     //Categories
     //Create
     it("POST - Create categories successful", async () => {
-        const response = await creaetCategory(accessToken);
+        const response = await createCategory(accessToken);
 
         expect((await response).status).to.equal(201);
         expect((await response).body.status).to.equal("success");
@@ -149,7 +149,6 @@ describe("End to End Kasir Aja Test", () => {
     it("DELETE - Delete categories successful", async () => {
         const response = await deleteCategory(accessToken, categoryId);
 
-        // Assertion
         expect((await response).status).to.equal(200);
         expect((await response).body.status).to.equal("success");
 

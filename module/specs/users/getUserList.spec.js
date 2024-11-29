@@ -16,7 +16,6 @@ describe("Read / Get User List Kasir Aja", () => {
 
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
-        console.log("Raw Response body:", response.body.data);
         console.log("Raw Response body:", JSON.stringify(response.body, null, 2));        
     })
 })

@@ -8,7 +8,7 @@ describe("Read / Get User Detail Kasir Aja", () => {
 
     it("GET - Succesfully get user detail", async () => {
         accessToken = await getAccessToken();
-        userId = "23f4d6bd-1937-4f28-891e-94c941b8d275";
+        userId = "d6706346-1ca8-4943-a074-ec584856005a";
         const response = await getUserDetail(accessToken, userId);
 
         expect((await response).status).to.equal(200);
@@ -17,6 +17,6 @@ describe("Read / Get User Detail Kasir Aja", () => {
         
         console.log("Status Code: ", response.status); 
         console.log("Status: ", response.body.status);
-        console.log("Raw Response body:", response.body);
+        console.log("Raw Response Body:", JSON.stringify(response.body, null, 2));
     })
 })
