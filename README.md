@@ -66,6 +66,7 @@ export const baseUrl = "https://kasir-api.zelz.my.id";
 
 
 ## Project Structure
+```bash
 API-KASIRAJA-MOCHA/
 │
 ├── module/
@@ -92,7 +93,7 @@ API-KASIRAJA-MOCHA/
 ├── package.json             # File konfigurasi npm
 ├── package-lock.json        # File lock npm
 └── .gitignore               # File untuk mengecualikan folder dari Git
-
+```
 
 
 ## Running the Tests
@@ -121,8 +122,7 @@ Here is the report generated using Mochawesome:
 
 ## Demo Video
 To see a demonstration of how to run the API tests, check out the following video:
-
-[![Watch the video](https://youtu.be/nSvrfVNPz6E)
+https://youtu.be/nSvrfVNPz6E
 
 This video will guide you through the process of running the tests and generating the test reports.
 
