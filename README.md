@@ -79,7 +79,9 @@ API-KASIRAJA-MOCHA/
 │       ├── authentications/
 │       ├── categories/
 │       └── users/
-│
+│   ├── helpers/             # Meng-generate access token
+│       └── getAccessToken.js
+|
 ├── specs/                   # Test case individu untuk setiap fitur
 │   ├── authentications/
 │   ├── categories/
