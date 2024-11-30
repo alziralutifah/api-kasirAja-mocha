@@ -6,11 +6,14 @@ This project is an API automation testing framework for the **Kasir Aja** applic
 
 ## Main Features
 1. CRUD Testing:
+   
 Users: Create, Read, Update, Delete.
+
 Categories: Create, Read, Update, Delete.
-2. Authentication:
+
+3. Authentication:
 Mendapatkan token JWT dari endpoint login secara otomatis.
-3. Result Reporting:
+4. Result Reporting:
 Menggunakan Mochawesome untuk menghasilkan laporan visual dalam format HTML dan JSON.
 
 
