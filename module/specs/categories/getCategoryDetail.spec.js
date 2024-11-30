@@ -8,7 +8,7 @@ describe("Read / Get Categories Detail Kasir Aja", () => {
 
     it("GET - Succesfully get categories detail", async () => {
         accessToken = await getAccessToken();
-        categoryId = "df819489-b888-4e63-b566-a16c43516d95";
+        categoryId = "e8ed6ce2-ca8d-451f-91c1-3c15f73220b0";
         const response = await getCategoryDetail(accessToken, categoryId);
 
         expect((await response).status).to.equal(200);

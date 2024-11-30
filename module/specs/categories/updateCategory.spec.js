@@ -8,7 +8,7 @@ describe("Update Categories Kasir Aja", () => {
 
     it("PUT - Update Categories Successful", async () => {
         accessToken = await getAccessToken();
-        categoryId = "df819489-b888-4e63-b566-a16c43516d95";
+        categoryId = "ea6e20db-fe03-4282-a366-1a5b118346b1";
         const response = await updateCategory(accessToken, categoryId);
 
         expect((await response).status).to.equal(200);
