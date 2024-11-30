@@ -66,32 +66,7 @@ export const baseUrl = "https://kasir-api.zelz.my.id";
 
 
 ## Project Structure
-API-KASIRAJA-MOCHA/
-│
-├── module/
-│   ├── data/                # Konfigurasi umum seperti base URL
-│   │   └── config.js
-│   ├── function/            # Fungsi reusable untuk endpoint API
-│       ├── authentications/
-│       ├── categories/
-│       └── users/
-│
-├── specs/                   # Test case individu untuk setiap fitur
-│   ├── authentications/
-│   ├── categories/
-│   └── users/
-│
-├── suites/                  # Mengelompokkan test case
-│   └── kasirAja.suite.js
-│
-├── mochawesome-report/      # Laporan hasil pengujian
-│   ├── mochawesome.html
-│   └── mochawesome.json
-│
-├── node_modules/            # Dependency yang diinstal
-├── package.json             # File konfigurasi npm
-├── package-lock.json        # File lock npm
-└── .gitignore               # File untuk mengecualikan folder dari Git
+API-KASIRAJA-MOCHA/ │ ├── module/ │ ├── data/ # General configuration like base URL │ │ └── config.js │ ├── function/ # Reusable functions for API endpoints │ ├── authentications/ │ ├── categories/ │ └── users/ │ ├── specs/ # Individual test cases for each feature │ ├── authentications/ │ ├── categories/ │ └── users/ │ ├── suites/ # Grouping of test cases │ └── kasirAja.suite.js │ ├── mochawesome-report/ # Test result reports │ ├── mochawesome.html │ └── mochawesome.json │ ├── node_modules/ # Installed dependencies ├── package.json # NPM configuration file ├── package-lock.json # NPM lock file └── .gitignore # Git ignore file
 
 
 ## Running the Tests
@@ -121,7 +96,7 @@ Here is the report generated using Mochawesome:
 ## Demo Video
 To see a demonstration of how to run the API tests, check out the following video:
 
-[![Watch the video](https://github.com/alziralutifah/api-kasirAja-mocha/blob/main/videos/Tugas%20API%20Automation%20-%20Alzira%20Lutifah.mp4)
+[![Watch the video](https://youtu.be/nSvrfVNPz6E?si=nrTe4APePSKypcEF)
 
 This video will guide you through the process of running the tests and generating the test reports.
 
