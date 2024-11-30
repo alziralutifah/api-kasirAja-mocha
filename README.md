@@ -12,9 +12,9 @@ This project is an API automation testing framework for the **Kasir Aja** applic
       Categories: Create, Read, Update, Delete.
 
 3. Authentication:
-Mendapatkan token JWT dari endpoint login secara otomatis.
-4. Result Reporting:
-Menggunakan Mochawesome untuk menghasilkan laporan visual dalam format HTML dan JSON.
+This involves automating the process of fetching a JWT token by sending login credentials to the specified login endpoint and retrieving the token for subsequent API requests.Mendapatkan token JWT dari endpoint login secara otomatis.
+5. Result Reporting:
+Utilizing Mochawesome to generate visual reports in both HTML and JSON formats, providing detailed insights into test execution and results.
 
 
 ## Tech Stack
