@@ -7,9 +7,9 @@ This project is an API automation testing framework for the **Kasir Aja** applic
 ## Main Features
 1. CRUD Testing:
    
-Users: Create, Read, Update, Delete.
+      Users: Create, Read, Update, Delete.
 
-Categories: Create, Read, Update, Delete.
+      Categories: Create, Read, Update, Delete.
 
 3. Authentication:
 Mendapatkan token JWT dari endpoint login secara otomatis.
