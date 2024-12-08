@@ -104,7 +104,7 @@ API-KASIRAJA-MOCHA/
 ## Running the Tests
 1. Run CRUD Test Cases: Execute a specific test file using Mocha.
 ```bash
-npx mocha {copy relative path]
+npx mocha {copy relative path}
 ```
 
 2. Run a Specific Test Suite: For example, to run the suite for "Kasir Aja".
